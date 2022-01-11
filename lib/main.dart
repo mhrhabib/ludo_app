@@ -30,14 +30,14 @@ class MainPage extends StatefulWidget {
 }
 
 class _MainPageState extends State<MainPage> {
-  int _selectedIndex = 0;
+  int _selectedIndex = 1;
 
   List<Widget> pages = const [
     LudoHomePage(),
     SearchPage(),
     UploadPage(),
     Favoritepage(),
-    AccountPage()
+    AccountPage(),
   ];
 
   void changeTheIndex(int index) {
@@ -52,7 +52,8 @@ class _MainPageState extends State<MainPage> {
       body: pages[_selectedIndex],
       bottomNavigationBar: BottomNavigationBar(
         type: BottomNavigationBarType.shifting,
-        showSelectedLabels: false,
+        showSelectedLabels: true,
+
         //unselectedItemColor: Colors.white,
         //fixedColor: Colors.amber,
         backgroundColor: Colors.green,
