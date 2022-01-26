@@ -5,6 +5,7 @@ import 'package:ludo_app/pages/search_page.dart';
 import 'pages/favorite_page.dart';
 import 'pages/ludo_home_page.dart';
 import 'pages/upload_page.dart';
+import 'screens/future_page.dart';
 
 void main() {
   runApp(const MyApp());
@@ -17,7 +18,7 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       title: 'Flutter Demo',
       theme: ThemeData(primarySwatch: Colors.blue),
-      home: const MainPage(),
+      home: FuturePage(),
     );
   }
 }
